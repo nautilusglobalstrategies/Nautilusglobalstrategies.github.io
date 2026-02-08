@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services | Nautilus Global Strategies</title>
+  <meta name="description" content="Services: commodities sourcing, brokerage facilitation, agent coordination, documentation workflow, and CRM-based deal tracking." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo"></span><span>Nautilus Global Strategies</span></a>
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="industries.html">Coverage</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="h-eyebrow">What we provide</div>
+      <h1 style="margin-top:10px">Services</h1>
+      <p class="lead">
+        Nautilus Global Strategies supports the early-to-mid stages of trade development: sourcing, qualification, introductions, and coordination.
+        We bring structure to conversations so parties can progress efficiently and professionally.
+      </p>
+
+      <div class="grid3" style="margin-top:14px">
+        <div class="card">
+          <h2>Commodities trade sourcing</h2>
+          <p class="small">Requirements intake, sourcing outreach, and initial fit assessment based on information provided by the parties.</p>
+          <ul class="list">
+            <li>Buyer requirements capture</li>
+            <li>Seller/agent sourcing outreach</li>
+            <li>Initial screening & documentation checklist</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Brokerage facilitation</h2>
+          <p class="small">Introductions and professional coordination between parties to maintain momentum and clarity.</p>
+          <ul class="list">
+            <li>Intro calls and meeting coordination</li>
+            <li>Communication workflow & follow-up</li>
+            <li>Timeline & milestone tracking</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Agent coordination</h2>
+          <p class="small">Support for agents representing buyers and sellers, helping align expectations, documents, and next steps.</p>
+          <ul class="list">
+            <li>Agent-to-agent coordination</li>
+            <li>Information routing</li>
+            <li>Escalation paths for bottlenecks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:14px">
+        <div class="card">
+          <h2>Documentation workflow support</h2>
+          <p class="small">
+            We do not replace counsel or formal due diligence. We help parties organize the workflow and ensure
+            common documentation expectations are clear early.
+          </p>
+          <ul class="list">
+            <li>Process checklists</li>
+            <li>Document readiness guidance</li>
+            <li>Secure handoff coordination (as directed by the parties)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>CRM-based deal tracking (HubSpot)</h2>
+          <p class="small">
+            We can route inquiries into HubSpot and track each opportunity through defined stages (buyer/seller/agent).
+            This improves response speed and reduces dropped conversations.
+          </p>
+          <ul class="list">
+            <li>Form-to-CRM intake</li>
+            <li>Contact segmentation & tagging</li>
+            <li>Pipeline stages and reminders</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top:14px" class="card">
+        <h2>Start an inquiry</h2>
+        <p class="small">Use the contact page to submit an inquiry. You’ll be routed into our workflow for next steps.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="contact.html">Contact / Inquiry Form</a>
+          <a class="btn" href="compliance.html">Compliance Overview</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div><strong>Nautilus Global Strategies</strong> — Commodities trade sourcing & brokerage facilitation.</div>
+      <div>© <span id="y"></span> Nautilus Global Strategies.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>

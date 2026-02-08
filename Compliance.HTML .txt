@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Compliance | Nautilus Global Strategies</title>
+  <meta name="description" content="Compliance-minded trade facilitation: documentation-first workflows, counterparty clarity, and responsible coordination." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo"></span><span>Nautilus Global Strategies</span></a>
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="industries.html">Coverage</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="h-eyebrow">Standards & process</div>
+      <h1 style="margin-top:10px">Compliance & responsible coordination</h1>
+      <p class="lead">
+        Nautilus Global Strategies supports trade sourcing and facilitation with a documentation-first mindset.
+        We encourage counterparties to follow applicable laws and engage qualified professionals for legal, tax,
+        banking, shipping, and inspection matters.
+      </p>
+
+      <div class="two-col" style="margin-top:14px">
+        <div class="card">
+          <h2>What we do</h2>
+          <ul class="list">
+            <li>Coordinate introductions and communications</li>
+            <li>Maintain professional workflow and milestones</li>
+            <li>Encourage documentation readiness early</li>
+            <li>Support clarity on mandates and representation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>What we do not do</h2>
+          <ul class="list">
+            <li>Provide legal, tax, or financial advice</li>
+            <li>Act as a bank, escrow, or custodian of funds</li>
+            <li>Guarantee performance, pricing, or outcomes</li>
+            <li>Replace formal due diligence</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid3" style="margin-top:14px">
+        <div class="card">
+          <h2>Documentation-first</h2>
+          <p class="small">
+            We promote early clarity on basic documents that counterparties commonly request (specifics vary by deal).
+          </p>
+          <ul class="list">
+            <li>Company details & authorized signatory confirmation</li>
+            <li>Proof of supply / capacity (where applicable)</li>
+            <li>Buyer requirements and delivery expectations</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Counterparty clarity</h2>
+          <p class="small">
+            Clear representation reduces misunderstandings. We encourage explicit mandate definitions and points of contact.
+          </p>
+          <ul class="list">
+            <li>Who represents buyer vs seller</li>
+            <li>Communication paths</li>
+            <li>Decision-making authority</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Professional support</h2>
+          <p class="small">
+            We encourage use of qualified professionals for shipping, inspection, banking, and legal documentation.
+          </p>
+          <ul class="list">
+            <li>Inspection services (as required)</li>
+            <li>Logistics and freight specialists</li>
+            <li>Legal counsel and banking partners</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top:14px" class="notice">
+        This page is informational only and not legal advice. Parties are responsible for compliance with all applicable laws and regulations,
+        including sanctions and trade restrictions in their jurisdictions.
+      </div>
+
+      <div style="margin-top:14px" class="cta-row">
+        <a class="btn primary" href="contact.html">Compliance-Minded Inquiry</a>
+        <a class="btn" href="services.html">Services</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div><strong>Nautilus Global Strategies</strong> — Commodities trade sourcing & brokerage facilitation.</div>
+      <div>© <span id="y"></span> Nautilus Global Strategies.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>

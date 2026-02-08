@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coverage | Nautilus Global Strategies</title>
+  <meta name="description" content="Global coverage for commodities trade sourcing and brokerage facilitation. Neutral, compliance-minded coordination with buyers, sellers, and agents." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo"></span><span>Nautilus Global Strategies</span></a>
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="industries.html">Coverage</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="h-eyebrow">Global coverage</div>
+      <h1 style="margin-top:10px">Industries & commodity categories</h1>
+      <p class="lead">
+        We operate with a category-agnostic approach focused on structured introductions and documentation workflows.
+        Specific categories are evaluated case-by-case based on counterparty readiness and compliance considerations.
+      </p>
+
+      <div class="grid3" style="margin-top:14px">
+        <div class="card">
+          <h2>Agricultural</h2>
+          <p class="small">Sourcing coordination for agricultural commodities based on buyer requirements and seller availability.</p>
+          <div class="pills">
+            <span class="pill">Grains</span>
+            <span class="pill">Sugar</span>
+            <span class="pill">Edible oils</span>
+            <span class="pill">Other agri</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Energy & industrial</h2>
+          <p class="small">Facilitation and coordination for energy and industrial-related commodities where appropriate.</p>
+          <div class="pills">
+            <span class="pill">Industrial inputs</span>
+            <span class="pill">Refined products</span>
+            <span class="pill">Bulk shipments</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Metals & materials</h2>
+          <p class="small">Coordination with vetted counterparties for materials sourcing and introductions.</p>
+          <div class="pills">
+            <span class="pill">Metals</span>
+            <span class="pill">Scrap streams</span>
+            <span class="pill">Industrial materials</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:14px">
+        <div class="card">
+          <h2>How we engage</h2>
+          <ul class="list">
+            <li>Receive inquiry with core requirements</li>
+            <li>Confirm basic fit and documentation readiness</li>
+            <li>Coordinate introductions & next steps</li>
+            <li>Support structured workflow through milestones</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>What helps move faster</h2>
+          <ul class="list">
+            <li>Clear buyer specs (quantity, Incoterms, destination, timing)</li>
+            <li>Seller proof of supply / capacity (as applicable)</li>
+            <li>Agent mandate clarity (who represents whom)</li>
+            <li>Professional points of contact and response timelines</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top:14px" class="notice">
+        Category examples above are for orientation only. Actual engagement depends on the parties, jurisdictional considerations,
+        and compliance screening where appropriate.
+      </div>
+
+      <div style="margin-top:14px" class="cta-row">
+        <a class="btn primary" href="contact.html">Submit an Inquiry</a>
+        <a class="btn" href="services.html">Services</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div><strong>Nautilus Global Strategies</strong> — Commodities trade sourcing & brokerage facilitation.</div>
+      <div>© <span id="y"></span> Nautilus Global Strategies.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>

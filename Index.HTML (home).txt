@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nautilus Global Strategies | Commodities Trade Sourcing & Brokerage Facilitation</title>
+  <meta name="description" content="Nautilus Global Strategies provides neutral, compliance-minded commodities trade sourcing and brokerage facilitation for global buyers, sellers, and agents." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Nautilus Global Strategies Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Nautilus Global Strategies</span>
+      </a>
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="industries.html">Coverage</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="h-eyebrow">Global trade coordination</div>
+          <h1>Commodities trade sourcing & brokerage facilitation—neutral, structured, and relationship-driven.</h1>
+          <p class="lead">
+            We support international buyers, sellers, and agents with sourcing, qualification, introductions, and transaction coordination.
+            Our approach is documentation-first and compliance-aware to help counterparties move efficiently from inquiry to execution.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="contact.html">Request a Partner Call</a>
+            <a class="btn" href="services.html">View Services</a>
+            <a class="btn" href="compliance.html">Compliance Overview</a>
+          </div>
+
+          <div class="pills" aria-label="Key service tags">
+            <span class="pill">Sourcing & procurement support</span>
+            <span class="pill">Buyer / seller introductions</span>
+            <span class="pill">Agent coordination</span>
+            <span class="pill">Documentation workflow</span>
+            <span class="pill">Global coverage</span>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h2>Operational focus</h2>
+          <p class="small">A clear process reduces friction and builds confidence with counterparties.</p>
+          <div class="kpi">
+            <div class="row">
+              <span class="label">Service model</span>
+              <span class="value">Facilitation & coordination</span>
+            </div>
+            <div class="row">
+              <span class="label">Counterparties</span>
+              <span class="value">Buyers • Sellers • Agents</span>
+            </div>
+            <div class="row">
+              <span class="label">Coverage</span>
+              <span class="value">Global</span>
+            </div>
+            <div class="row">
+              <span class="label">Approach</span>
+              <span class="value">Neutral • Structured</span>
+            </div>
+          </div>
+          <hr class="sep" />
+          <div class="notice">
+            <strong>Note:</strong> We do not provide legal, tax, or financial advice. We coordinate introductions and workflows, and we encourage parties to use qualified counsel and independent due diligence.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid3">
+          <div class="card">
+            <h2>Sourcing & qualification</h2>
+            <p class="small">
+              We help identify potential counterparties, confirm basic suitability, and organize initial information so parties can quickly determine fit.
+            </p>
+            <ul class="list">
+              <li>Requirements intake (buyer/seller/agent)</li>
+              <li>Capacity & availability checks (as provided)</li>
+              <li>Document readiness guidance</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Brokerage facilitation</h2>
+            <p class="small">
+              We support introductions, communication flow, and professional handoffs to streamline negotiation and reduce delays.
+            </p>
+            <ul class="list">
+              <li>Introductions & communication coordination</li>
+              <li>Meeting scheduling and follow-up</li>
+              <li>Timeline management and next-step clarity</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Transaction coordination</h2>
+            <p class="small">
+              We help organize the process and documentation workflow while the parties and their professionals finalize terms.
+            </p>
+            <ul class="list">
+              <li>Document checklist support</li>
+              <li>Process tracking (milestones)</li>
+              <li>HubSpot CRM tracking on request</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top:14px" class="card">
+          <h2>Built for lead generation + CRM</h2>
+          <p class="small">
+            This site is structured to embed HubSpot forms and route inquiries directly into your HubSpot CRM pipeline (buyers, sellers, agents)
+            with tags and automated follow-ups.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="contact.html">Go to Contact Form</a>
+            <a class="btn" href="services.html">See How We Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div><strong>Nautilus Global Strategies</strong> — Commodities trade sourcing & brokerage facilitation.</div>
+      <div>© <span id="y"></span> Nautilus Global Strategies. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>
