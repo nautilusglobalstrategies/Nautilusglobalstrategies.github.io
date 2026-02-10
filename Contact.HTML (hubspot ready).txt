@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Nautilus Global Strategies</title>
+  <meta name="description" content="Contact Nautilus Global Strategies for commodities trade sourcing and brokerage facilitation. Submit a buyer, seller, or agent inquiry." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo"></span><span>Nautilus Global Strategies</span></a>
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="industries.html">Coverage</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="h-eyebrow">Get in touch</div>
+      <h1 style="margin-top:10px">Contact / inquiry</h1>
+      <p class="lead">
+        Submit an inquiry below. For faster routing, include whether you are a <strong>Buyer</strong>, <strong>Seller</strong>, or <strong>Agent</strong>
+        and your commodity requirements or availability.
+      </p>
+
+      <div class="two-col" style="margin-top:14px">
+        <div class="card">
+          <h2>Inquiry form (HubSpot)</h2>
+          <p class="small">
+            Replace the placeholder below with your HubSpot embedded form snippet.
+          </p>
+
+          <!-- HUBSPOT FORM EMBED PLACEHOLDER
+               1) In HubSpot: Marketing → Lead Capture → Forms → Create/Select Form → Embed
+               2) Paste the generated script snippet right here.
+          -->
+
+          <div class="notice">
+            <strong>Paste your HubSpot form embed here.</strong><br/>
+            Once embedded, all submissions will automatically create contacts in HubSpot CRM.
+          </div>
+
+          <hr class="sep" />
+
+          <h2>Preferred details</h2>
+          <ul class="list">
+            <li>Role: buyer / seller / agent</li>
+            <li>Commodity + specs + quantity</li>
+            <li>Destination / delivery terms (Incoterms)</li>
+            <li>Timeline</li>
+            <li>Primary point of contact</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Direct contact</h2>
+          <p class="small">
+            Add your business email once created (recommended: <strong>info@nautilusglobalstrategies.com</strong> or similar).
+          </p>
+          <div class="notice">
+            <strong>Email:</strong> info@yourdomain.com<br/>
+            <strong>Hours:</strong> By appointment<br/>
+            <strong>Coverage:</strong> Global
+          </div>
+
+          <hr class="sep" />
+
+          <h2>Professional note</h2>
+          <p class="small">
+            We coordinate introductions and workflow. Parties are responsible for due diligence and compliance in their jurisdictions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div><strong>Nautilus Global Strategies</strong> — Commodities trade sourcing & brokerage facilitation.</div>
+      <div>© <span id="y"></span> Nautilus Global Strategies.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>
