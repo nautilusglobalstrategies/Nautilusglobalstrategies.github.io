@@ -6,7 +6,80 @@
   <title>Contact | Nautilus Global Strategies</title>
   <meta name="description" content="Contact Nautilus Global Strategies for commodities trade sourcing and brokerage facilitation. Submit a buyer, seller, or agent inquiry." />
   <link rel="stylesheet" href="style.css" />
-</head>
+  <style>
+    .inquiry-form{
+      display:grid;
+      gap:14px;
+      margin-top:18px;
+    }
+    .inquiry-form input,
+    .inquiry-form textarea{
+      width:100%;
+      padding:12px;
+      border-radius:10px;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.3);
+      color:var(--text);
+      font-family:inherit;
+      font-size:14px;
+      font-weight:bold;
+    }
+    .inquiry-form input::placeholder,
+    .inquiry-form textarea::placeholder{
+      color:var(--muted);
+      font-weight:normal;
+      opacity:.7;
+    }
+    .inquiry-form textarea{
+      min-height:100px;
+      resize:vertical;
+    }
+    .inquiry-form select{
+      width:100%;
+      padding:12px;
+      border-radius:10px;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.3);
+      color:var(--text);
+      font-family:inherit;
+      font-size:14px;
+      font-weight:bold;
+    }
+    .inquiry-form button{
+      padding:14px;
+      border:none;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:var(--bg);
+      font-weight:bold;
+      font-size:15px;
+      cursor:pointer;
+      transition:opacity .2s;
+    }
+    .inquiry-form button:hover{opacity:.9}
+    .inquiry-form button:disabled{opacity:.5;cursor:default}
+    .form-thankyou{
+      display:none;
+      text-align:center;
+      padding:30px 20px;
+    }
+    .form-thankyou h2{
+      color:var(--accent2);
+      margin-bottom:10px;
+    }
+    .form-thankyou p{
+      color:var(--muted);
+    }
+    .form-status{
+      font-size:13px;
+      color:var(--accent);
+      margin-top:4px;
+      min-height:18px;
+    }
+  </style>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/245125363.js"></script>
+<!-- End of HubSpot Embed Code --></head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
@@ -16,7 +89,7 @@
         <a href="services.html">Services</a>
         <a href="industries.html">Coverage</a>
         <a href="compliance.html">Compliance</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
     </div>
   </header>
@@ -32,40 +105,40 @@
 
       <div class="two-col" style="margin-top:14px">
         <div class="card">
-          <h2>Inquiry form (HubSpot)</h2>
-          <p class="small">
-            Replace the placeholder below with your HubSpot embedded form snippet.
-          </p>
+          <div id="formPanel">
+            <h2>Submit inquiry</h2>
+            <p class="small">Fields marked with * are required.</p>
 
-          <!-- HUBSPOT FORM EMBED PLACEHOLDER
-               1) In HubSpot: Marketing → Lead Capture → Forms → Create/Select Form → Embed
-               2) Paste the generated script snippet right here.
-          -->
-
-          <div class="notice">
-            <strong>Paste your HubSpot form embed here.</strong><br/>
-            Once embedded, all submissions will automatically create contacts in HubSpot CRM.
+            <form id="inquiryForm" class="inquiry-form">
+              <input type="hidden" name="source_website" value="nautilusglobalstrategies.com">
+              <input type="text" name="fullname" placeholder="Full Name *" required>
+              <input type="email" name="email" placeholder="Email Address *" required>
+              <input type="tel" name="phone" placeholder="Phone Number">
+              <input type="text" name="commodity" placeholder="Commodity (e.g. Sugar, Cement, Rice)">
+              <input type="text" name="quantity" placeholder="Quantity / Volume">
+              <input type="text" name="destination" placeholder="Destination / Delivery Terms (Incoterms)">
+              <textarea name="message" placeholder="Additional details: Are you a buyer, seller, or agent? Include specs, timeline, and any other relevant information."></textarea>
+              <button type="submit">Submit Inquiry</button>
+              <div class="form-status" id="formStatus"></div>
+            </form>
           </div>
 
-          <hr class="sep" />
-
-          <h2>Preferred details</h2>
-          <ul class="list">
-            <li>Role: buyer / seller / agent</li>
-            <li>Commodity + specs + quantity</li>
-            <li>Destination / delivery terms (Incoterms)</li>
-            <li>Timeline</li>
-            <li>Primary point of contact</li>
-          </ul>
+          <div class="form-thankyou" id="thankYou">
+            <h2>Inquiry received.</h2>
+            <p>
+              Thank you for contacting Nautilus Global Strategies.<br/>
+              We will review your inquiry and respond within 1-2 business days.
+            </p>
+          </div>
         </div>
 
         <div class="card">
           <h2>Direct contact</h2>
           <p class="small">
-            Add your business email once created (recommended: <strong>info@nautilusglobalstrategies.com</strong> or similar).
+            Prefer to reach out directly?
           </p>
           <div class="notice">
-            <strong>Email:</strong> info@yourdomain.com<br/>
+            <strong>Email:</strong> info@nautilusglobalstrategies.com<br/>
             <strong>Hours:</strong> By appointment<br/>
             <strong>Coverage:</strong> Global
           </div>
@@ -90,5 +163,66 @@
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
   <script src="app.js"></script>
+  <script>
+  // HubSpot Forms API — form ID will be set once the form is created in HubSpot
+  // For now, Collected Forms tracking will capture submissions automatically
+  const PORTAL_ID = "245125363";
+  // TODO: Replace with Nautilus form ID once created
+  const FORM_ID = ""; // Leave empty until HubSpot form is created
+
+  const form = document.getElementById("inquiryForm");
+  const formPanel = document.getElementById("formPanel");
+  const thankYou = document.getElementById("thankYou");
+  const formStatus = document.getElementById("formStatus");
+
+  form.addEventListener("submit", async function(e){
+    e.preventDefault();
+    formStatus.textContent = "Submitting...";
+
+    // Split "Full Name" into first and last name for HubSpot
+    const fullName = form.elements["fullname"].value.trim();
+    const nameParts = fullName.split(/\s+/);
+    const firstname = nameParts[0] || "";
+    const lastname = nameParts.slice(1).join(" ") || "";
+
+    // Build the fields array in HubSpot's expected format
+    const fields = [
+      { name: "source_website", value: form.elements["source_website"].value },
+      { name: "firstname", value: firstname },
+      { name: "lastname", value: lastname },
+      { name: "email", value: form.elements["email"].value },
+      { name: "phone", value: form.elements["phone"].value },
+      { name: "commodity", value: form.elements["commodity"].value },
+      { name: "quantity", value: form.elements["quantity"].value },
+      { name: "destination", value: form.elements["destination"].value },
+      { name: "message", value: form.elements["message"].value }
+    ];
+
+    try {
+      if (FORM_ID) {
+        // Submit via HubSpot Forms API
+        const response = await fetch(
+          `https://api.hsforms.com/submissions/v3/integration/submit/${PORTAL_ID}/${FORM_ID}`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ fields: fields })
+          }
+        );
+        if (!response.ok) {
+          console.error("HubSpot submission failed:", response.status);
+        }
+      }
+      // Collected Forms script will also capture the submission automatically
+    } catch(err) {
+      console.error("Submission error:", err);
+    }
+
+    formStatus.textContent = "";
+    formPanel.style.display = "none";
+    thankYou.style.display = "block";
+  });
+  </script>
+
 </body>
 </html>
